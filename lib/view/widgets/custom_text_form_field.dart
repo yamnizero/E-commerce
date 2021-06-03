@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'custom_text.dart';
 
 class CustomTextFormField extends StatelessWidget {
-  final String text;
+  final String? text;
   final String hint;
   final onSaved;
   final validator;
@@ -17,7 +17,7 @@ class CustomTextFormField extends StatelessWidget {
         children:
         [
           CustomText(
-            text: text,
+            text: text!,
             fontSize: 14,
             color: Colors.grey.shade900,
           ),

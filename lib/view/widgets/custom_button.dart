@@ -4,7 +4,7 @@ import 'package:flutter_shop/constance/constance.dart';
 import 'custom_text.dart';
 
 class CustomButton extends StatelessWidget {
-  final String text ;
+  final String? text ;
   final  onPressed ;
 
   CustomButton({  required this.text, required this.onPressed,});
@@ -20,7 +20,7 @@ class CustomButton extends StatelessWidget {
             )
         ),
         child:CustomText(
-          text: text,
+          text: text!,
           alignment: Alignment.center,
           color: Colors.white,
         )

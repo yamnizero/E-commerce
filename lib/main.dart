@@ -1,9 +1,11 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_shop/view/auth/login_screen.dart';
+import 'package:flutter_shop/view/control_view.dart';
+import 'package:flutter_shop/view/home_view.dart';
 import 'package:get/get.dart';
-// @dart=2.9
 import 'helper/binding.dart';
-import 'view/auth/login_screen.dart';
+
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialBinding:Binding(),
       home: Scaffold(
-        body: LoginScreen(),
+        body: ControlView(),
       ),
     );
   }

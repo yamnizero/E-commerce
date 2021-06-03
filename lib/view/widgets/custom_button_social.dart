@@ -4,11 +4,11 @@ import 'custom_text.dart';
 
 class CustomButtonSocial extends StatelessWidget {
 
-  final String text ;
+  final String? text ;
   final String imageName ;
   final  onPressed;
   CustomButtonSocial({
-    required this.text,
+   this.text,
     required this.imageName,
     required this.onPressed,
 });
@@ -34,7 +34,7 @@ class CustomButtonSocial extends StatelessWidget {
               Image.asset(imageName),
               SizedBox(width: 90,),
               CustomText(
-                text: text,
+                text: text!,
               ),
             ],
           )),
